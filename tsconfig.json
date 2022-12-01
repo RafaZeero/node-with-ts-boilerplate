@@ -1,10 +1,45 @@
 {
-  "complerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2020",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "useUnknownInCatchVariables": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "allowJs": false,
+    "alwaysStrict": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [],
+    "lib": ["ES2020", "DOM"],
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ES2017",
     "sourceMap": true,
-    "outDir": "dist"
+    "declaration": false,
+    "rootDir": ".",
+    "baseUrl": ".",
+    // "paths": {
+    //   "@path/*": ["root/app/src/*"],
+    //   "@some_feature_name": ["root/app/<path_to_file>/file.ts"],
+    // },
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
-  "include": ["src/**/*"]
+  "exclude": ["node_modules", "tmp"]
 }
